@@ -1,0 +1,52 @@
+/* SingleView.module.css */
+
+.container {
+  padding: 0.5rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.key {
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #f3f4f6;
+  width: 33.33%;
+  text-transform: capitalize;
+}
+
+.value {
+  padding: 1rem;
+}
+
+.spaceY {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}

@@ -1,0 +1,119 @@
+.navbar {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.searchBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 6px 10px;
+  font-size: 14px;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.searchBox button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.searchBox button:hover {
+  background-color: #e0e0e0;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconWithBadge {
+  position: relative;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #ff3b30;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.userWrapper {
+  position: relative;
+  /* required for dropdown alignment */
+  cursor: pointer;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.userProfile span {
+  font-weight: 600;
+  color: #333;
+}
+
+.userName {
+  max-width: 100px;
+  /* Adjust as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.avatarAlpha {
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(94, 92, 92);
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(130, 128, 126);
+  color: white;
+}
+
+.menuWrapper {
+  z-index: 1000;
+  position: absolute;
+}

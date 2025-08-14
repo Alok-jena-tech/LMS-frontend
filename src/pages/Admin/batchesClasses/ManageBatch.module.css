@@ -1,0 +1,146 @@
+/* .updatemodal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.input{
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+      font-size: 1rem;
+
+}
+.input:focus{
+    border: 1px solid rgb(168, 168, 237);
+}
+
+.selectBox{
+width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete{
+    color: red;
+    font-size: 15px;
+}
+.btns{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.cancelBtn {
+  background-color: #ea5409;
+  color: #f6f7fa;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.cancelBtn:hover {
+  background-color: #c69d4d;
+}
+
+.updateBtn {
+  background-color: hsl(241, 96%, 51%);
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.updateBtn:hover {
+  background-color: #988df4;
+} */
+
+.updatemodal {
+  padding: 1rem;
+  border-radius: 1rem;
+  /* width: 100%; */
+  max-width: 500px;
+  /* margin: auto; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input,.selectBox  {
+  width: 90%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+.selectBox{
+  width: 98%;
+}
+.input:focus,.selectBox:focus {
+  border-color: #4f46e5;
+    box-shadow: 0 1px 1px #4f46e5;
+
+}
+
+textarea {
+  width: 90%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4f46e5;
+      box-shadow: 0 1px 1px #4f46e5;
+
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancelBtn {
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background-color: #d1d5db;
+}
+
+.updateBtn {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.updateBtn:hover {
+  background-color: #0284c7;
+}
+
+.delete{
+  color: red;
+
+}
+.delete span{
+  font-weight: 700;
+}

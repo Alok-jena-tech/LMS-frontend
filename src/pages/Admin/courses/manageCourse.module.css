@@ -1,0 +1,82 @@
+.updatemodal {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 5px;
+}
+
+.input,
+.selectBox {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.selectBox:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancelBtn {
+  background-color: #f87171;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background-color: #ef4444;
+}
+
+.updateBtn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.updateBtn:hover {
+  background-color: #4338ca;
+}
+
+.delete{
+    color: red;
+}
+.delete span{
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+  .updatemodal {
+    padding: 1.2rem;
+    width: 90%;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  /* background-color: black; */
+  margin-top: 10px;
+  width: 100%;
+  gap: 20px;
+}
+
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.tools button {
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+
+.tools button:hover {
+  transform: scale(1.1);
+}
+
+.topContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f8f9f9;
+}
+
+.scrollableCell {
+  max-height: 35px;
+  /* Reduce max height */
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+  padding-right: 4px;
+  font-size: 0.85rem;
+  /* Reduce font size */
+  line-height: 1.2;
+  /* Tighter line spacing */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  scrollbar-width: 0px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card1 {
+  /* max-width: 650px; */
+  padding: 1rem;
+  border-radius: 10px;
+  background: #d0cbcb;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card1:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-4px); */
+}
+
+.card h2 {
+  padding: 5px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.totalPaid {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 1vw;
+}
+
+.times {
+  margin-left: 1vw;
+}
+
+.signOfgood {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: hsl(140, 100%, 50%);
+}
+
+.signOfmiddle {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: hsl(37, 100%, 50%);
+}
+
+.signOfbed {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.card2 {
+  /* max-width: 450px; */
+  padding: 1rem;
+  border-radius: 10px;
+  background: #d0cbcb;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card2:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-4px); */
+}
+
+.card2 h2 {
+  padding: 5px;
+}
+
+.attendanceBarContainer {
+  width: 50px;
+  background-color: #938d8d;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+  margin: auto;
+  position: relative;
+}
+
+.attendanceBar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  /* padding-right: 4px; */
+  transition: width 0.3s ease;
+}
+
+.attendancePercent {
+  z-index: 2;
+  color: black;
+  position: absolute;
+  left: 10px;
+}
+
+.card3 {
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card3:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-4px); */
+}
+
+.btnContainer {
+  margin-top: 10px;
+}

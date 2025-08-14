@@ -1,0 +1,66 @@
+.button {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: white; */
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-flex; /* Ensures buttons stay in a row */
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.icon {
+  font-size: 15px;
+  margin-right: 5px;
+  padding-top: 4px;
+}
+
+.primary {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.secondary {
+  background-color: #dc3545;
+  color: white;
+}
+
+.success {
+  background-color: #34cea7; /* Green */
+  color: white;
+}
+
+.info {
+  background-color: #7c5cc4; /* Blue */
+  color: white;
+}
+
+.doc {
+  background-color: #ff7588;
+  color: white;
+}
+
+.doc2 {
+  background-color: #ffc107;
+  color: black;
+}
+
+.info2 {
+  background-color: #2196f3;
+  color: white;
+}
+
+.danger {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.nonBorder {
+  border-color: #7c5cc4;
+  background-color: #fff;
+  color: #7c5cc4;
+}

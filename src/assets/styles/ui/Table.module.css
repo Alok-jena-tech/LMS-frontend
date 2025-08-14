@@ -1,0 +1,124 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 16px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.th {
+  background-color: #f4f6f8;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.tr:hover {
+  background-color: #eef3ff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #444;
+  font-size: 14px;
+}
+
+.actionIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.iconBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Icon-specific colors */
+.viewBtn {
+  color: #1e90ff;
+  /* Dodger Blue */
+}
+
+.viewBtn:hover {
+  color: #0d6efd;
+}
+
+.editBtn {
+  color: #28a745;
+  /* Green */
+}
+
+.editBtn:hover {
+  color: #218838;
+}
+
+.deleteBtn {
+  color: #dc3545;
+  /* Red */
+}
+
+.deleteBtn:hover {
+  color: #b02a37;
+}
+
+.actionsHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+.plusIcon {
+  font-size: 14px;
+}
+/* styles.module.css */
+.active {
+  color: green;
+  font-weight: bold;
+}
+.inactive {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,135 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+}
+
+.open {
+  right: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+
+.count {
+  background-color: #0a66c2;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.markAll {
+  background: none;
+  border: none;
+  color: #0a66c2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.closeIcon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+.notificationList {
+  padding: 10px 16px;
+}
+
+.notificationItem {
+  display: flex;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.notificationItem:hover {
+  background-color: #f9f9f9;
+}
+
+.unread {
+  background-color: #eef6ff;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.message {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #0a66c2;
+  margin-left: 4px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+}
+
+.privateMessage {
+  margin-top: 6px;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+.notificationList {
+  padding: 10px 16px;
+  max-height: 1000px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}

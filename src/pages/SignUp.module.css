@@ -1,0 +1,276 @@
+body {
+  overflow: hidden;
+}
+
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7b61ff;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.dark {
+  background-color: #1a1a2e;
+}
+
+.signupBox {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 870px;
+  height: 80vh;
+  transition: background-color 0.3s ease;
+}
+
+.dark .signupBox {
+  background-color: #2c2c54;
+}
+
+.signupLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: transparent;
+}
+
+.signupLeft img {
+  width: 100%;
+  height: auto;
+}
+
+.signupRight {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 90vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.signupRight::-webkit-scrollbar {
+  display: none;
+}
+
+.dark .signupRight {
+  background-color: #1f1f3b;
+}
+
+.signupRight h2 {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dark .signupRight h2 {
+  color: #fff;
+}
+
+.highlight {
+  color: #001aff;
+}
+
+.formInput,
+.select {
+  width: 100%;
+  padding: 12px 14px !important;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.address .addressInput {
+  width: calc(50% - 8px);
+  padding: 12px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+.radio {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.dark .radio label {
+  color: #f1f1f1;
+}
+
+.formInput:focus,
+.select:focus,
+.address .addressInput:focus {
+  border-color: #7b61ff;
+}
+
+.dark .formInput,
+.dark .select,
+.dark .addressInput {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.addressDel {
+  padding-top: 12px;
+}
+
+.dark .addressDel {
+  color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.submitButton {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #128099;
+}
+
+.dark .submitButton {
+  background-color: #4c5cff;
+}
+
+.dark .submitButton:hover {
+  background-color: #3b4ae0;
+}
+
+.darkToggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.darkToggle:hover {
+  opacity: 0.8;
+}
+
+.or {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 16px 0;
+}
+
+.googleBtn,
+.facebookBtn {
+  background-color: transparent;
+  color: #7c5cc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.googleBtn:hover,
+.facebookBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.dark .googleBtn,
+.dark .facebookBtn {
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.dark .googleBtn:hover,
+.dark .facebookBtn:hover {
+  background-color: #333;
+}
+
+.loginLink {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.dark .loginLink {
+  color: #fff;
+}
+
+.loginLink a {
+  color: #1a0dab;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signupBox {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .signupLeft {
+    display: none;
+  }
+
+  .signupRight {
+    padding: 2rem 1.5rem;
+    max-height: none;
+    overflow-y: visible;
+  }
+}

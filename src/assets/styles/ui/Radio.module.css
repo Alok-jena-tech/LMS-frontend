@@ -1,0 +1,8 @@
+/* Radio.module.css */
+.radio {
+  margin: 4px;
+  accent-color: #2196f3; /* Blue by default */
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}

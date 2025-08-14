@@ -1,0 +1,244 @@
+/* AddStudent.module.css */
+
+.container {
+  max-width: 1200px;
+  padding: 30px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.heading {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.95em;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input,
+.select {
+  padding: 12px 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  /* Ensures padding doesn't increase width */
+}
+
+.input:focus,
+.select:focus {
+  border-color: #4a67f0;
+  box-shadow: 0 0 0 3px rgba(74, 103, 240, 0.2);
+  outline: none;
+}
+
+.input[type="file"] {
+  padding: 10px;
+}
+
+.error {
+  color: #e53935;
+  font-size: 0.85em;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+  /* Spans across all columns */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Qualification Section */
+.qualificationSection {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  margin-top: 40px;
+}
+
+.qualificationSection h3 {
+  color: #1a237e;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.qualificationRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) 100px;
+  /* Adjusted last column for button */
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-end;
+  /* Align inputs and button at the bottom */
+}
+
+.addButton {
+  background-color: #007bff;
+  /* Blue */
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  height: fit-content;
+  /* Ensure button doesn't stretch */
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  /* Ensures rounded corners apply to content */
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table th {
+  background-color: #e8eaf6;
+  /* Light purple-blue */
+  color: #3f51b5;
+  /* Deeper purple-blue */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 8px;
+}
+
+.editBtn {
+  background-color: #ffc107;
+  /* Amber */
+  color: #333;
+}
+
+.editBtn:hover {
+  background-color: #e0a800;
+  transform: translateY(-1px);
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+  /* Red */
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .qualificationRow {
+    grid-template-columns: 1fr;
+  }
+
+  .addButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    margin-bottom: 5px;
+    width: calc(50% - 4px);
+    /* For side-by-side on small screens */
+    margin-right: 0;
+  }
+}
