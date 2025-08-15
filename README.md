@@ -1,74 +1,80 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+📚 Learning Management System (LMS) - Frontend
+The Learning Management System (LMS) Frontend is a responsive and interactive web application built with React.js. It provides a seamless interface for students, instructors, and administrators to access courses, track progress, manage enrollments, and interact with the LMS backend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+🧑‍💼 User Interface
 
-## Available Scripts
+Clean and intuitive UI for Admin, Instructor, and Student roles
 
-In the project directory, you can run:
+Dynamic routing for smooth navigation between pages
 
-### `npm start`
+🎓 Course Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Browse available courses with detailed content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Admin/Instructor can manage courses (Add, Edit, Delete)
 
-### `npm test`
+📝 Enrollment System
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Students can enroll in courses
 
-### `npm run build`
+Admin/Instructors can monitor enrollment activity
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📊 Progress Tracking
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Track module and lesson completion for each student
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Display learning progress visually
 
-### `npm run eject`
+🔍 Search & Filter
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Search courses by name, category, or instructor
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Filter courses by difficulty level or price
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🛠 Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Framework: ⚛️ React.js
 
-## Learn More
+State Management: 🗃️ Redux Toolkit / Context API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Styling: 🎨 CSS Modules
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Routing: 🔀 React Router
 
-### Code Splitting
+API Integration: ⚡ Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🧰 Tools & Practices
 
-### Analyzing the Bundle Size
+Lazy loading for performance optimization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Modular component structure for maintainability
 
-### Making a Progressive Web App
+Environment variable management with .env
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Error handling & notifications for better UX
 
-### Advanced Configuration
+📂 Folder Structure
+LMS-Frontend/
+│-- src/
+│ │-- components/ # Reusable UI components
+│ │-- pages/ # Main page views
+│ │-- services/ # API calls
+│ │-- store/ # Redux slices & store
+│ │-- assets/ # Images, icons, styles
+│ │-- App.js # Main app component
+│ │-- index.js # Entry point
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🚀 Installation & Usage
 
-### Deployment
+# Clone the repo
+https://github.com/Alok-jena-tech/lms-frontend.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Navigate to project
+cd LMS-Frontend
 
-### `npm run build` fails to minify
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# LMS-frontend
->>>>>>> 06acbe5a6ef8410411bb6f1c03d9f616f22c80de
+# Start development server
+npm start
