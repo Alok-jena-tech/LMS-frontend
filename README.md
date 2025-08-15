@@ -1,4 +1,5 @@
 📚 Learning Management System (LMS) - Frontend
+
 The Learning Management System (LMS) Frontend is a responsive and interactive web application built with React.js. It provides a seamless interface for students, instructors, and administrators to access courses, track progress, manage enrollments, and interact with the LMS backend.
 
 ✨ Features
@@ -57,16 +58,15 @@ Error handling & notifications for better UX
 📂 Folder Structure
 LMS-Frontend/
 │-- src/
-│ │-- components/ # Reusable UI components
-│ │-- pages/ # Main page views
-│ │-- services/ # API calls
-│ │-- store/ # Redux slices & store
-│ │-- assets/ # Images, icons, styles
-│ │-- App.js # Main app component
-│ │-- index.js # Entry point
+│   │-- components/   # Reusable UI components
+│   │-- pages/        # Main page views
+│   │-- services/     # API calls
+│   │-- store/        # Redux slices & store
+│   │-- assets/       # Images, icons, styles
+│   │-- App.js        # Main app component
+│   │-- index.js      # Entry point
 
 🚀 Installation & Usage
-
 # Clone the repo
 https://github.com/Alok-jena-tech/lms-frontend.git
 
