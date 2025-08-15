@@ -68,8 +68,7 @@ LMS-Frontend/
 
 🚀 Installation & Usage
 # Clone the repo
-https://github.com/Alok-jena-tech/lms-frontend.git
-
+https://github.com/Alok-jena-tech/LMS-frontend.git
 # Navigate to project
 cd LMS-Frontend
 
